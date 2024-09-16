@@ -1,0 +1,12 @@
+<div>
+    <div>
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
+    </div>
+
+    <input type="text" #clientId>
+    <button (click)="callUser(clientId.value)">Call User</button>
+    <!-- Agar signal o'zgaruvchisi bo'lmasa, to'g'ridan-to'g'ri chaqirishni qoldirishingiz mumkin -->
+    <button (click)="answerCall({ signal: null })">Answer Call</button>
+  </div>
+  
