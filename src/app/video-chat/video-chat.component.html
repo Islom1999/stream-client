@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row mb-3 mt-3 justify-content-md-center">
+      <div id="user-name">{{userName}}</div>
+      <button id="call" class="btn btn-primary col-1">Call!</button>
+      <button id="hangup" class="col-1" class="btn btn-primary">Hangup</button>
+      <div id="answer" class="col"></div>
+    </div>
+    <div id="videos">
+      <div id="video-wrapper">
+        <div id="waiting" class="btn btn-warning">Waiting for answer...</div>
+        <video class="video-player" #localVideo autoplay playsinline controls></video>
+      </div>
+      <video class="video-player" #remoteVideo autoplay playsinline controls></video>
+    </div>
+  </div>
+  
